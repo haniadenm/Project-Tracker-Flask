@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Students by Github username | {{ first_name }} {{ last_name }}{% endblock %}
+
+{% block body %}
+
+    <form action="/student">
+        <p>
+            <lable> Please enter students github username</lable>
+            <input type="text" name='github'>
+        </p>
+        <input type="submit">
+    </form>
+
+{% endblock %}
